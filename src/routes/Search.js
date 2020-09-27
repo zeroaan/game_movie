@@ -22,10 +22,9 @@ class Search extends React.Component {
       } = await axios.get("/v1/search/movie.json", {
         params: {
           query: search,
-          display: 20,
-          yearfrom: 2010,
+          display: 1,
+          yearfrom: 2000,
           yearto: 2019,
-          country: "KR",
         },
         headers: {
           "X-Naver-Client-Id": ID_KEY,
